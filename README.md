@@ -3,22 +3,20 @@
 
 # Big Data and Hadoop  
 ## Youtube Data Analysis   
-
 ### Programmer: Akram M'Tir  
-### Date: 06-04-2017  
-### Location: Lausanne, CH.  
 
 
-* ETL - Extraction, Transformation and Load
-* 1 - Import, Clean the data and reduce the nose using bash shell and  Pig.
+
+####  ETL - Extraction, Transformation and Load  
+####  1 - Import, Clean the data and reduce the nose using bash shell and  Pig.  
 In the Edureka VM connected to internet, open a terminal, and execute the main script "HadoopCertification_Ak_MTir_042017.sh" as shown bellow.  
 
-* HADOOP HDFS File System
-* 2 - Store the data into the HDFS Hadoop File System
+####  HADOOP HDFS File System  
+####  2 - Store the data into the HDFS Hadoop File System  
 The script will import the dataset and will store the extracted data in the Hadoop File System.  
 
 
-### Process and analyse the data using Pig and Hive sql.
+#### Process and analyse the data using Pig and Hive sql.
 Next the script will process and analyse the data using Pig language and Hive sql to answer the questions.  
 
 
