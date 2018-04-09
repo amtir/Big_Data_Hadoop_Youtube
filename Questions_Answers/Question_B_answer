@@ -1,0 +1,38 @@
+hive> 
+    > 
+    > 
+    > SELECT VideoID, Category, NumberViews, Rating, NumberRating FROM youtubeTable ORDER BY Rating desc, NumberRating desc Limit 10;
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1491459718997_0073, Tracking URL = http://localhost:8088/proxy/application_1491459718997_0073/
+Kill Command = /usr/lib/hadoop-2.2.0/bin/hadoop job  -kill job_1491459718997_0073
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2017-04-07 02:02:35,217 Stage-1 map = 0%,  reduce = 0%
+2017-04-07 02:02:39,380 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.62 sec
+2017-04-07 02:02:44,613 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.2 sec
+MapReduce Total cumulative CPU time: 1 seconds 200 msec
+Ended Job = job_1491459718997_0073
+MapReduce Jobs Launched: 
+Job 0: Map: 1  Reduce: 1   Cumulative CPU: 1.2 sec   HDFS Read: 969630 HDFS Write: 352 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 200 msec
+OK
+Dl4km0v-P60	Travel & Events	8811	5.0	129
+nPEOr55j0Fs	Music	5915	5.0	84
+KQweSiiviVQ	Music	5422	5.0	65
+voGD_rriZPA	News & Politics	1654	5.0	55
+jIuCA4RRtXE	Music	3125	5.0	49
+gw0R0w-WqyA	Music	1956	5.0	46
+MgYM4dq79Q0	Entertainment	1908	5.0	45
+gjbG5N4EfDc	Music	14752	5.0	43
+MIQFTBsGccA	Film & Animation	13103	5.0	42
+hFCe9HSw2vc	News & Politics	2908	5.0	40
+Time taken: 14.166 seconds, Fetched: 10 row(s)
+hive> 
+

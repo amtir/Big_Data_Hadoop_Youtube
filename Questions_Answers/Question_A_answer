@@ -1,0 +1,50 @@
+hive> 
+    > 
+    > 
+    > SELECT Category, count(*) as NumberUploaded FROM youtubeTable group BY Category order by NumberUploaded desc limit 5; 
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1491459718997_0071, Tracking URL = http://localhost:8088/proxy/application_1491459718997_0071/
+Kill Command = /usr/lib/hadoop-2.2.0/bin/hadoop job  -kill job_1491459718997_0071
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2017-04-07 01:58:23,379 Stage-1 map = 0%,  reduce = 0%
+2017-04-07 01:58:27,624 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.56 sec
+2017-04-07 01:58:32,895 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.05 sec
+MapReduce Total cumulative CPU time: 1 seconds 50 msec
+Ended Job = job_1491459718997_0071
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1491459718997_0072, Tracking URL = http://localhost:8088/proxy/application_1491459718997_0072/
+Kill Command = /usr/lib/hadoop-2.2.0/bin/hadoop job  -kill job_1491459718997_0072
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2017-04-07 01:58:43,694 Stage-2 map = 0%,  reduce = 0%
+2017-04-07 01:58:46,921 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 0.44 sec
+2017-04-07 01:58:52,130 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 0.93 sec
+MapReduce Total cumulative CPU time: 930 msec
+Ended Job = job_1491459718997_0072
+MapReduce Jobs Launched: 
+Job 0: Map: 1  Reduce: 1   Cumulative CPU: 1.05 sec   HDFS Read: 969630 HDFS Write: 601 SUCCESS
+Job 1: Map: 1  Reduce: 1   Cumulative CPU: 0.93 sec   HDFS Read: 967 HDFS Write: 78 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 980 msec
+OK
+Entertainment	908
+Music	862
+Comedy	414
+People & Blogs	398
+News & Politics	333
+Time taken: 34.89 seconds, Fetched: 5 row(s)
+hive> 
+

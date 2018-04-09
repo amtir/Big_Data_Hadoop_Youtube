@@ -1,0 +1,48 @@
+hive> 
+    > 
+    > 
+    > SELECT VideoID, Category, NumberViews, Rating, NumberRating FROM youtubeTable ORDER BY NumberViews desc Limit 20;
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1491459718997_0074, Tracking URL = http://localhost:8088/proxy/application_1491459718997_0074/
+Kill Command = /usr/lib/hadoop-2.2.0/bin/hadoop job  -kill job_1491459718997_0074
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2017-04-07 02:04:44,319 Stage-1 map = 0%,  reduce = 0%
+2017-04-07 02:04:48,546 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.62 sec
+2017-04-07 02:04:53,770 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.2 sec
+MapReduce Total cumulative CPU time: 1 seconds 200 msec
+Ended Job = job_1491459718997_0074
+MapReduce Jobs Launched: 
+Job 0: Map: 1  Reduce: 1   Cumulative CPU: 1.2 sec   HDFS Read: 969630 HDFS Write: 802 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 200 msec
+OK
+12Z3J1uzd0Q	Film & Animation	65341925	3.03	9189
+4DC4Rb9quKk	Music	33754615	4.84	73257
+LU8DDYz68kM	Pets & Animals	27721690	4.88	58850
+kHmvkRoEowc	Entertainment	18235463	2.42	122129
+Md6rURKhZmA	Music	18141492	4.83	34802
+EwTZ2xpQwpA	Music	16841569	4.23	83514
+A2f3cuUXXRs	Music	13038204	4.8	18910
+rZBA0SKmQy8	Comedy	11007201	4.83	75004
+irp8CNj9qBI	Music	10172172	4.9	43774
+ZCYaw5tGYAs	Comedy	8944331	4.86	16551
+YCj-RyKCmHQ	Music	8892789	4.61	10511
+Pxs5EM3xlus	Music	8361412	4.87	12752
+eBGIQ7ZuuiU	Comedy	8119804	4.64	23256
+rDB9zwlXrB8	Music	7990144	4.9	15439
+Qit3ALTelOo	Pets & Animals	7939352	4.76	56767
+O61Do03ZCjw	Music	7553998	4.69	16334
+veYbj2zypaM	Music	7155928	4.81	20364
+iikKzQwgBJc	Music	7043921	4.86	17885
+pFlcqWQVVuU	Entertainment	6618744	4.73	17739
+GfPJeDssBOM	Howto & Style	6101232	4.47	22030
+Time taken: 14.505 seconds, Fetched: 20 row(s)
+hive> 
+
